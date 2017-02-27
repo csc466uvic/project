@@ -65,10 +65,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p><bd>Nov 11, 2016</bd></p>
+                    <p><bd>Carsten Griwodz, Pål Halvorsen</bd></p>
                     <h4>The Fun of using TCP for an MMORPG</h4>
-                    <p>The second story - An Angel Visits Mary is ready! </p>
-                    <li><a href="bs03.html">View me here!</a></li>
+                    <p><h4>ABSTRACT</h4>Massive multi-player online games have become a popular,
+fast growing, multi-million industry with a very high user
+mass supporting hundreds or thousands of concurrent play-
+ers. In many cases, these games are centralized and every
+player communicates with the central server through a time-
+critical unicast event stream. Funcom’s Anarchy Online is
+one of these; it is based on TCP. We find that its kind of
+traffic has some interesting properties that inspire changes
+to protocol or architecture.
+<br>
+In these game streams, TCP does not back off, using TCP
+does not have to be slower than using UDP, and almost
+only repeated timeouts ruin the game experience. Improving
+the latter in the sender implementation does not impose
+any remarkable penalty on the network. Alternatively, a
+proxy architecture for multiplexing could save about 40%
+resources at the server, allow congestion control to work and
+also reduce the lag of the game.</p>
                 </div>
 
             </div><!-- /row -->
@@ -81,10 +97,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>Todd</ba></p>
-                    <p><bd>Oct 30, 2016</bd></p>
-                    <h4>Questions Section</h4>
-                    <p>Now you can access 25 fun questions on Questions Section. These questions and answers are from Question 1-25 are edited from http://ministryblue.com/. We edited the some of them so that can be more reasonable to answer your hard questions. But if you still have any questions in your mind, please contact us through the CONTACT section so that we may post your questions with our answer on Question Section! Enjoy.</p>
+                    <p><bd>Kuan-Ta Chen, Chun-Ying Huang, Polly Huang, and Chin-Laung Lei</bd></p>
+                    <h3>An Empirical Evaluation of TCP Performance in Online Games</h3>
+                    <p><h4>ABSTRACT</h4>
+A fundamental design question to ask in the development
+of a network game is—Which transport protocol should be
+used—TCP, UDP, or some other protocols? Seeking an objective
+answer to the choice of communication protocol for
+MMORPGs, we assess whether TCP, a popular choice, is
+suitable for MMORPGs based on empirical evidence. To
+the best of our knowledge, this work is the first evaluation of
+transport protocol performance using real-life game traces.
+We analyze a 1, 356-million-packet trace from ShenZhou
+Online, a TCP-based, commercial, mid-sized MMORPG.
+Our analysis indicates that TCP is unwieldy and inappropriate
+for MMORPGs. This is due to four distinctive characteristics
+of MMORPG traffic: 1) tiny packets, 2) low packet
+rate, 3) application-limited traffic generation, and 4) bidirectional
+traffic. We show that because TCP was originally
+designed for unidirectional and network-limited bulk
+data transfers, it cannot adapt well to MMORPG traffic. In
+particular, the window-based congestion control and the fast
+retransmit algorithm for loss recovery are ineffective. Furthermore,
+TCP is overkill, as not every game packet needs
+to be transmitted in a reliably and orderly manner. We also
+show that the degraded network performance did impact
+users’ willingness to continue a game. Finally, we discuss
+guidelines in designing transport protocols for online games.</p>
                 </div>
             </div><!-- /row -->
         </div> <!-- /container -->
@@ -95,11 +134,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>Todd</ba></p>
-                    <p><bd>Oct 27, 2016</bd></p>
-                    <h4>Website Is Different NOW</h4>
-                    <p>We just changed our logo to a better one as well as our home page layout! Still everything is on track. </p>
-                    <p><img class="img-responsive" src="assets/img/bible.png" alt=""></p>
+                    <p><bd>Jose Saldana</bd></p>
+                    <h3>On the effectiveness of an optimization method for the traffic of TCP-based multiplayer online games</h3>
+                    <p><h4>ABSTRACT</h4> This paper studies the feasibility of using an optimization method, based on multiplexing and header compression, for the traffic of Massively Multiplayer Online Role Playing Games (MMORPGs) using TCP at the Transport Layer. Different scenarios where a number of flows share a common network path are identified. The adaptation of the multiplexing method is explained, and a formula of the savings is devised. The header compression ratio is obtained using real traces of a popular game and a statistical model of its traffic is used to obtain the bandwidth saving as a function of the number of players and the multiplexing period. The obtained savings can be up to 60 % for IPv4 and 70 % for IPv6. A Mean Opinion Score model from the literature is employed to calculate the limits of the multiplexing period that can be used without harming the user experience. The interactions between multiplexed and non-multiplexed flows, sharing a bottleneck with different kinds of background traffic, are studied through simulations. As a result of the tests, some limits for the multiplexing period are recommended: the unfairness between players can be low if the value of the multiplexing period is kept under 10 or 20 ms. TCP background flows using SACK (Selective Acknowledgment) and Reno yield better results, in terms of fairness, than Tahoe and New Reno. When UDP is used for background traffic, high values of the multiplexing period may stress the unfairness between flows if network congestion is severe.</p>
+                    <p><br><img  src="assets/img/paper1.gif" width = "100" alt=""><br></p>
+                    <p>Citation: Saldana, J. Multimed Tools Appl (2016) 75: 17333. doi:10.1007/s11042-015-3001-y</p>
                 </div>
 
             </div><!-- /row -->
@@ -111,11 +150,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>Maggie</ba></p>
-                    <p><bd>Oct 14, 2016</bd></p>
-                    <h4>First Story</h4>
-                    <p>The drawing for the first story has been completed. We will shortly make it into animation! And we are going to change our view for the website.</p>
-                    <li><a href="bs01.html">View me here!</a></li>
+                    <p><bd>Sarmad A. Abdulazeez, Abdennour El Rhalibi, Dhiya Al-Jumeily </bd></p>
+                    <h3>Simulation of Massively Multiplayer Online Games
+Communication Using OPNET Custom Application</h3>
+                    <p><h4>ABSTRACT</h4>  In recent years, there has been an important growth
+in online gaming. Nowadays, Massively Multiplayer Online
+Games (MMOGs) may involve millions of synchronous players
+scattered around the world and engaging with each other
+within a single shared game. In this paper, we propose a new
+technique to communicate between players and game server,
+and between them based on hybrid Peer-to-Peer architecture.
+We propose to use OPNET Modeler 18.0, and in particular the
+custom application to simulate the new architecture, which
+required the implementation of new nodes models and
+behaviors in the simulator to emulate correctly the new
+architecture. We use OPNET Modeler 18.0 to simulate the
+network, applying two transport protocols TCP and UDP, and
+with different scenarios. The scenarios include both clientserver
+and hybrid P2P system to evaluate the communication
+of games with (125, 500, and 1000) peers. </p>
                 </div>
 
             </div><!-- /row -->
@@ -128,10 +181,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>Todd</ba></p>
-                    <p><bd>September 28, 2016</bd></p>
-                    <h4>Website Is Up</h4>
-                    <p>The website is running! Now we have the Questions section, Bible Stories section, and About sections!</p>
+                    <p><bd>V. Ramakrishna, Max Robinson, Kevin Eustice, Peter Reiher</bd></p>
+                    <h3>An active self-optimizing multiplayer gaming architecture</h3>
+                    <p><h4>ABSTRACT</h4>  Multiplayer games are representative of a large
+class of distributed applications that suffer from redundant
+communication, bottlenecks, single points of failure and poor
+reactivity to changing network conditions. Many of these
+problems can be alleviated through simple network adaptations
+at the infrastructure level. In this paper, we describe a
+model in which game packets are directed along the edges of
+a rooted tree connecting the players, aggregated during the
+upstream flight and multicast from the root to the leaves. This
+tree is constructed based on a heuristic, and can dynamically
+adjust itself in response to changes in network conditions.
+This gaming infrastructure is built and maintained using active
+networks, which is currently the only open architecture
+suitable for these types of applications.
+<br>
+We have designed and implemented a prototype using
+ANTS that performs these adaptations for unmodified
+DOOM clients. We present analytical and simulation results
+that illustrate the reduction in communication overhead, and
+show that the multicast tree can quickly adjust to changing
+network conditions. The overhead of the active network-based middleware is acceptable, especially in wide-area
+networks.</p>
                 </div>
 
             </div><!-- /row -->
@@ -143,31 +216,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>Maggie</ba></p>
-                    <p><bd>September 21, 2016</bd></p>
-                    <h4>First Picture</h4>
-                    <p><img class="img-responsive" src="assets/img/firstimage.jpg" alt=""></p>
-                    <p>We are working on our first story - Seven Days of Creation, and we just have finished the first picture! Please stay tuned for more stories!</p>
+                    <p><bd>Josh Glazer, Sanjay Madhav</bd></p>
+                    <h3>Multiplayer Game Programming: Architecting Networked Games</h3>
+                    <p><h4>ABSTRACT</h4>Networked multiplayer games are a multibillion dollar business: some games now attract tens of millions of players. In this practical, code-rich guide, Joshua Glazer and Sanjay Madhav guide you through every aspect of engineering them. Drawing on their immense experience as both game developers and instructors, the authors lead you through building a robust multiplayer architecture, and creating every engine-level system. You’ll learn through in-depth working code examples for two complete games: an action game and a real time strategy (RTS) game.
+<br>
+First, Madhav and Glazer review the essentials of networking and network programming from the standpoint of game developers. Next, they walk through managing game data transmission, updating game objects across the network, and organizing the devices that join your game. You’ll learn how to ensure reliable performance despite the Internet’s inherent inconsistencies, and how to design game code for maximum security and scalability. The authors conclude by addressing two increasingly crucial issues: incorporating gamer services and hosting your games in the cloud.</p>
                 </div>
 
             </div><!-- /row -->
         </div> <!-- /container -->
     </div><!-- /white -->
 
-	<!-- +++++ First Post +++++ -->
-	<div id="grey">
-	    <div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<p><img src="assets/img/user.png" width="50px" height="50px"> <ba>Maston</ba></p>
-					<p><bd>September 14, 2016</bd></p>
-					<h4>Project Started</h4>
-					<p><b>Bible World</b> is a safe place for your kids to learn bible stories online. We present Bible stories using graphic and animation. We also provide interesting questions with answer for parent to ask their kids after each story. This website is developed by students at University of Victoria. </p>
-				</div>
-
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /grey -->
 
 
 
