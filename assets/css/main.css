@@ -1,14 +1,17 @@
- /* Author: Carlos Alvarez
+/*
+ * Author: Carlos Alvarez
  * URL: http://alvarez.is
  *
- * Project Name: Kelvin - Free Bootstrap 3 Resume Theme
+ * Project Name: STANLEY - Free Bootstrap 3 Theme
  * Version: 1.0
  * URL: http://blacktie.co
  */
 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 body {
-  background-color: #f2f2f2;
-    font-family: "Lato";
+  	background-color: #f5e67f;
+  	font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -19,16 +22,24 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
-    font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #333;
 }
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
 
 
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
     margin-bottom: 25px;
+    font-size: 16px;
 }
 
 .centered {
@@ -37,7 +48,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #f14b13;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -49,7 +60,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #ce7e81;
     text-decoration: none;
     outline: 0;
 }
@@ -73,212 +84,171 @@ a:after {
 }
 
 
-/*---------------------------------------------------
-	3.1 Topbar
----------------------------------------------------*/
-
-#section-topbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 10000;
-	overflow: visible;
-	font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
 }
 
-#section-topbar a {
-  color: #fff;
+.navbar-inverse {
+	padding-bottom: 70px;
+	padding-top: 70px;
 }
 
-#topbar-inner {
-	background: #111;
-	line-height: 0;
-	text-align: center;
+.navbar-inverse {
+	background-color: #db6e6c;
+	border-color: #16a085;
 }
 
-/*
-	Top Bar
-
-	By default, top navigation bar uses "fixed" position
-*/
-#section-topbar ul#nav {
-	display: inline-block;
-	position: relative;
-	margin: 0;
-	padding: 0;
-
-	border-right: 1px solid #222;
-
-	/* For IE, the outcast */
-	zoom:1;
-	*display: inline;
-}
-
-#section-topbar ul#nav > li {
-	display: block;
-    float: left;
-    padding: 0;
-}
-
-
-#section-topbar ul#nav a {
-  display: block;
-  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  padding: 18px 20px 18px 20px;
-  border-left: 1px solid #222;
-}
-
-	#section-topbar ul#nav a:hover {
-	  background: #222;
-	  text-decoration: none;
-	  border-left: 1px solid #111;
-	}
-
-	#section-topbar ul#nav .active a {
-		background: #44bbaa;
-		border-left: 1px solid #111;
-	}
-
-		#section-topbar ul#nav .active a:hover {
-			background: #44bbaa;
-		}
-#section-topbar i {
-	font-size: 25px;
-}
-/*---------------------------------------------------
-	SECTION WRAPS
----------------------------------------------------*/
-
-/* Header Wrap */
-#headerwrap {
-	background: url(../img/header-bg.jpg) no-repeat center top;
-	margin-top: 60px;
-	padding-top:140px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 500px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#headerwrap h1 {
-	font-size: 80px;
+.navbar-inverse .navbar-nav > li > a {
 	color: white;
 }
 
-#headerwrap h3 {
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+	font-weight: 700;
 	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
 	color: white;
 }
 
-/* Intnro Wrap */
-
-#intro {
-	background: #2c3e50;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	color: white;
-} 
-
-#intro h5, p {
-	color: white;
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
 }
 
-#intro i {
-	color: white;
-	font-size: 20px;
-	padding-right: 8px;
-	vertical-align: middle;
+.progress-bar-theme {
+  background-color: #db6e6c;
 }
 
 
-#skillswrap {
-	background: #2c3e50;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	color: white;
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
-#skillswrap h5, p {
-	color: white;
-}
-
-#footwrap {
-	background: #2f2f2f;
+.pt {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-#footwrap p {
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f5e67f;
+}
+
+
+#footer {
+	background-color: #5e85a4;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#footer p {
 	color: white;
 }
 
-#footwrap h5 {
+#footer h4 {
 	color: white;
+	text-transform: uppercase;
+	padding-bottom: 20px;
 }
 
 
-#footwrap t {
-	font-weight: 700;
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
 }
 
-#footwrap i {
-	padding-right: 8px;
-	color: #1abc9c;
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
 }
 
-/* Copyright Wrap */
-
-#c {
-	background: #222222;
-	padding-top: 15px;
-	text-align: right;
+#lightyellow {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f5e67f;
 }
 
-#c p {
-	color: white
-}
-
-
-
-/* Global Values */
-
-.desc {
-	padding-top: 50px;
-}
-
-.desc p {
-	color: #2f2f2f;
-}
-
-.desc t {
-	color: #34495e;
-	font-weight: 700;
-}
-
-.desc imp {
-	padding: 6px;
-	color: white;
-	background: #34495e;
-}
-
-.desc more {
-	color: #95a5a6;
+#darkyellow {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f3c669;
 }
 
 
-sm {
+
+/* Blog Date*/
+bd {
 	font-size: 12px;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+	font-size: 22px;
+	padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+	font-size: 12px;
+}
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom {
+    display:block;
+    position:relative;
+    overflow:hidden;
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+    .zoomOverlay {
+        position:absolute;
+        top:0; left:0;
+        bottom:0; right:0;
+        display:none;
+        background-image:url(../img/zoom.png);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+.zoom2 {
+	opacity: 0.8;
+}
+
+.zoom2:hover {
+	opacity: 0.5;
+}
+
+/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: #ffffff;
 }
