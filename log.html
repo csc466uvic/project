@@ -64,10 +64,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
+                    <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
                     <p><bd>March 28, 2017</bd></p>
                     <h4>Time To Start To Write Final Report</h4>
-                    <p>Typing...</p>
+                    <p>Our paper will focus on the trade-off of using TCP/UDP in MMORPG, what the reasons behind this are, and we will propose a possible hybrid solution.</p>
                 </div>
 
             </div><!-- /row -->
@@ -125,7 +125,8 @@
                     <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
                     <p><bd>March 23, 2017</bd></p>
                     <h4>Packet Capturing And Analyzing On GTA 5 ONLINE</h4>
-                    <p>Typing...</p>
+                    <p>During our study, CS (Counter Strick) and many other FPS games, RTS games are using UDP since it requires non-stop updating the status and location of a player. Yet, in recent years, game industry has started to combine MMORPG to FPS or MMORPG to RTS. LOL is an example combining MMORPG and RTS.<br>
+                    <br>So we choose GTA 5 ONLINE to study what transport protocol that FPS-MMORPG would use nowadays. Our guess is pure TCP. Let's find out!</p>
                 </div>
 
             </div><!-- /row -->
@@ -170,7 +171,7 @@
                     <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
                     <p><bd>March 17, 2017</bd></p>
                     <h4>Packet Analyzing </h4>
-                    <p>Typing...</p>
+                    <p>Diablo II, WOW, EverQuest</p>
                 </div>
             </div><!-- /row -->
         </div> <!-- /container -->
@@ -185,7 +186,7 @@
                         <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
                         <p><bd>March 14, 2017</bd></p>
                         <h4>Packet Analyzing</h4>
-                        <p>Typing...</p>
+                        <p>Fantasy Westward Journey, Blade And Soul, LOL</p>
                     </div>
 
                 </div><!-- /row -->
@@ -199,8 +200,9 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
                     <p><bd>March 11, 2017</bd></p>
-                    <h4>Packet Capturing On Ever Quest</h4>
-                    <p>Typing...</p>
+                    <h4>Packet Capturing On EverQuest</h4>
+                    <p>EverQuest is one of the MMORPG still using UDP. EverQuest is a 3D fantasy-themed massively multiplayer online role-playing game (MMORPG) released on March 16, 1999. It was the second commercially viable MMORPG to be released, after Ultima Online, and the first commercially successful MMORPG to employ a three-dimensional game engine.
+                    Since this is the first generation 3D MMORPG developed released in 1999, why could a UDP game works in an era when network was relatively slow? Any trade-off chossing UDP to transmit in 1999?</p>
                 </div>
             </div><!-- /row -->
         </div> <!-- /container -->
@@ -216,7 +218,7 @@
                         <p><bd>March 10, 2017</bd></p>
                         <h4>Packet Capturing On Diablo II</h4>
                         <p>As we also suspect the reason why MMORPG games use TCP more than anytime ever, is because network infrastructure has been improving, does it mean classic RPG don't use TCP? We will test one RPG game with multiplayer festure and a MMORPG game.<br>
-                        We choose Diablo II as our RPG sample and Ever Quest as our MMORPG sample. Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000.</p>
+                        <br>We choose Diablo II as our RPG sample and Ever Quest as our MMORPG sample. Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000.</p>
                     </div>
 
                 </div><!-- /row -->
@@ -233,7 +235,7 @@
                     <p><bd>March 7, 2017</bd></p>
                     <h4>Packet Capturing On World Of Warcraft</h4>
                     <p>Back to a real MMORPG game. We are going to look into World of Warcraft (WoW). WoW is a massively multiplayer online role-playing game (MMORPG) released in 2004 by Blizzard Entertainment.<br>
-                    We know it mainly uses TCP. Interestingly, when we play WoW during our packet capturing, we found that characters can move and stand on a same spot rather than players can box out each other in LOL. We suspect that makes players don't feel the in-game delay casued by TCP since the server doesn't need to predict players' potential paths, which is impossible without any delay.</p>
+                    <br>We know it mainly uses TCP. Interestingly, when we play WoW during our packet capturing, we found that characters can move and stand on a same spot rather than players can box out each other in LOL. We suspect that makes players don't feel the in-game delay casued by TCP since the server doesn't need to predict players' potential paths, which is impossible without any delay.</p>
                 </div>
             </div><!-- /row -->
         </div> <!-- /container -->
@@ -249,7 +251,7 @@
                         <p><bd>March 6, 2017</bd></p>
                         <h4>Packet Capturing On LOL</h4>
                         <p>League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. So technically speaking, it is a 3D, third-person multiplayer online battle arena (MOBA) game rather than a MMORPG. Only a small amount of players in each room comparied to MMORPG games.<br>
-                        So why would we bother to investgate LOL? If we categorize all game packets into move, attack, and talk, LOL is mainly consisted with move and attack. We want to see how much traffic will move and attack create. And more IMPORTANTLY, if it use TCP to move, how does the game predict one player boxes out another without delay. Or, is it inevitable without delay?</p>
+                        <br>So why would we bother to investgate LOL? If we categorize all game packets into move, attack, and talk, LOL is mainly consisted with move and attack. We want to see how much traffic will move and attack create. And more IMPORTANTLY, if it use TCP to move, how does the game predict one player boxes out another without delay. Or, is it inevitable without delay?</p>
                     </div>
 
                 </div><!-- /row -->
@@ -265,7 +267,7 @@
                     <p><bd>March 3, 2017</bd></p>
                     <h4>Packet Capturing On Blade And Soul</h4>
                     <p>Blade And Soul (블레이드 앤 소울) is a Korean fantasy martial-arts MMORPG game developed by NCSOFT (Team Bloodlust). On September 13, 2012, NCSOFT announced that Blade And Soul would release in Western territories, which eventually happened on January 19, 2016.<br>
-                    4.8 hours traffic was recorded for our research.</p>
+                    <br>4.8 hours traffic was recorded for our research.</p>
                 </div>
             </div><!-- /row -->
         </div> <!-- /container -->
@@ -281,7 +283,7 @@
                         <p><bd>February 28, 2017</bd></p>
                         <h4>Packet Capturing On Fantasy Westward Journey</h4>
                         <p>Fantasy Westward Journey (Mèng Huàn Xī Yóu) is a MMORPG developed and run by NetEase. It was released for the Microsoft Windows platform in December 2001. The game is the most popular online game in China as of May 2007 by peak concurrent users (PCU), with a peak count of 1.5 million.<br>
-                        We have captured the traffic playing this game. Since it is a turn-based MMORPG game, we hope it uses UDP for main trasmission. The result will be analyzed soon.</p>
+                        <br>We have captured the traffic playing this game. Since it is a turn-based MMORPG game, we hope it uses UDP for main trasmission. The result will be analyzed soon.</p>
                     </div>
 
                 </div><!-- /row -->
