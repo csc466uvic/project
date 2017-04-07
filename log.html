@@ -59,6 +59,188 @@
 
 	<!-- +++++ Posts Lists +++++ -->
 
+    <!-- +++++ 35 Post +++++ -->
+    <div id="grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
+                    <p><bd>April 6, 2017</bd></p>
+                    <h4>We Have Some Measurement</h4>
+                    <p>Since JakeMUD is a lightweight MMORPG MUD, the data is even fewer than MMORPGs in gaming industry. Thus, we have to scale up our result to be visible. Our recommended solution indeed reduce some bandwidth when some characters AFK. But the differences are relatively small.<br>
+                        <a><img src="assets/img/r1.jpg" width="200px" ></a>
+    </p>
+                </div>
+
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /grey -->
+
+    <!-- +++++ 34 Post +++++ -->
+    <div id="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
+                    <p><bd>April 5, 2017</bd></p>
+                    <h4>All About Trade-off! Trend?</h4>
+                    <p>TCP/UDP in MMORPGs is all about trade-off:<br><br>
+Between - Infrastructure requirement vs. TCP’s reliability<br>
+Between - Bandwidth vs. Speed<br>
+Between - UDP unreliability vs. TCP retransmission<br><br>
+But what's the future? Feel free to send us email about your thoughts!
+
+    </p>
+                </div>
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /white -->
+
+    <!-- +++++ 35 Post +++++ -->
+    <div id="grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
+                    <p><bd>April 4, 2017</bd></p>
+                    <h4>Our Project Recommendations</h4>
+                    <p>1. Disable Nagle’s Algorithm<br><br><br>
+2. Reduce server bandwidth on previous project JakeMUD (TCP-based MUD)<br><br>
+- Movement detection<br>
+- Send out a resume sequence number to client<br>
+- Multiple streaming channels to process messages - Move, Attack, Talk<br>
+- Move, Attack switch to UDP, Talk stick with TCP<br>
+- Switch back to TCP with resume number from client<br>
+
+
+    </p>
+                </div>
+
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /grey -->
+
+    <!-- +++++ 34 Post +++++ -->
+    <div id="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
+                    <p><bd>April 3, 2017</bd></p>
+                    <h4>Reflections From Dr. Pan</h4>
+                    <p>We will think more about firewall traversal in our final report. Also, we will dig into the measurement for TCP/UDP comparison, our recommended solution in JakeMUD.
+    </p>
+                </div>
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /white -->
+
+    <!-- +++++ 33 Post +++++ -->
+    <div id="grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
+                    <p><bd>April 3, 2017</bd></p>
+                    <h4>Project Presentation</h4>
+                    <p>Presentation In ECS from 11:00 am - 12:00 pm!<br>
+
+</p>
+                </div>
+
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /grey -->
+
+    <!-- +++++ 32 Post +++++ -->
+    <div id="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
+                    <p><bd>April 2, 2017</bd></p>
+                    <h4>Problem With TCP In MMORPG</h4>
+                    <p>Retransmission timeout - ping increases significantly if packet dropped<br><br>
+Big header - we have Nagle's algorithm! But you want bandwidth or less latency?
+</p>
+                </div>
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /white -->
+
+    <!-- +++++ 31 Post +++++ -->
+    <div id="grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
+                    <p><bd>April 1, 2017</bd></p>
+                    <h4>More Details About Three Reasons</h4>
+                    <p>Internet Speed<br>
+                        One of the major reason that game developer use TCP instead of UDP is that the internet speed nowadays become faster and affordable. The internet speed is fast enough to minimize TCP packet dropping. Therefore, the game developers tend to use TCP as their transport protocol as it is more reliable than UDP.<br><br>
+                        Congestion Control<br>
+                        The second reason of choosing TCP over UDP is TCP provide congestion control. What we found one of the characteristic of MMORPG network traffic is the actual size of game packet payload is small compared to other online games. You may ask: since TCP may consume more bandwidth than UDP, why still sending small packet with TCP?
+                        The answer is Nagle’s Algorithm. It combines few more small packets to send to save bandwidth. UDP header doesn’t have window size, if the whole game uses UDP, it may occupy your whole bandwidth. So sometimes we feel our game is slow, it most likely nothing to do with network speed, just because the application buffer limits the traffic!<br><br>
+                        Cheat Detection<br>
+In the old days, cheat detection relied on server side has evolved to client side now. The day when internet speed was relatively slow, sometimes game server need to take the responsibility of cheat detection. For example, to prevent cheating software to clear all fog of war, server need to send back confirmation of explored fog of war, UDP do the job better on this. If TCP would be applied to respond explored fog, players can notice the inconsistency because of TCP’s ACK delay. But today, most real-time cheating detection can be done locally by the software itself, the need of relying UDP on cheat detection has gone
+
+    </p>
+                </div>
+
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /grey -->
+
+    <!-- +++++ 30 Post +++++ -->
+    <div id="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
+                    <p><bd>March 31, 2017</bd></p>
+                    <h4>What Are The Reasons?</h4>
+                    <p>UDP is more efficient with smaller packet size. But we have three main reasons to use TCP.<br>
+                        They are - Internet speed, Congestion control, and Anti-cheat software!
+</p>
+                </div>
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /white -->
+
+
+    <!-- +++++ 29 Post +++++ -->
+    <div id="grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Mastonicon.png" width="50px" height="50px"> <ba>Maston</ba></p>
+                    <p><bd>March 30, 2017</bd></p>
+                    <h4>Three Games Will Be Our Study Subjects</h4>
+                    <p>We will choose the following three MMORPGs as our study subject since they are more typical.<br>
+                    <br>EverQuest (1999) -  UDP<br>
+World of Warcraft (2004) - TCP<br>
+Blade and Soul (2012) - TCP
+</p>
+                </div>
+
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /grey -->
+
+    <!-- +++++ 28 Post +++++ -->
+    <div id="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
+                    <p><bd>March 29, 2017</bd></p>
+                    <h4>Prepare Presentation On April 3</h4>
+                    <p>We will show you our three main reasons choosing TCP over UDP in MMORPG, and propose a possible solution to improve some functions.</p>
+                </div>
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /white -->
+
     <!-- +++++ 27 Post +++++ -->
     <div id="grey">
         <div class="container">
@@ -157,7 +339,7 @@
                         <p><img src="assets/img/Toddicon.png" width="50px" height="50px"> <ba>Todd</ba></p>
                         <p><bd>March 20, 2017</bd></p>
                         <h4>Is Packet Generation Rate A Reason Of Choosing TCP/UDP?</h4>
-                        <p>Typing...</p>
+                        <p>What we found is the packet generation rate of MMORPG is pretty low compared to FPS and RTS games. This is a reason why choosing TCP over UDP since there are fewer data to transmit. Instead, reliability is much more important in this sense.</p>
                     </div>
 
                 </div><!-- /row -->
